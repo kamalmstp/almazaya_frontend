@@ -300,6 +300,7 @@
             <center>
               <h3 style="color: #FFFFFF"><?=date('l, d M Y');?></h3>
               <h3 style="color: #FFFFFF"><span id="jam"></span></h3>
+              <h4 style="color: #FFFFFF">Jam Ke-</h4>
               <h1 style="color: #FFFFFF"><span id="ke"> </span></h1>
             </center>
           </div>
@@ -311,7 +312,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><!-- <span>Latest</span> --> News</h2>
+            <h2 class="mb-4"><span>Latest</span> News</h2>
             <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
           </div>
         </div>
