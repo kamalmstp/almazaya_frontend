@@ -190,7 +190,7 @@
             <a href="http://www.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <img src="assets/img/icons/SMP.png" style="height: 100px; width: 100px;">
+                <img src="<?= base_url()?>assets/img/logo1.png" width="50%;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Junior high school</h3>
@@ -203,7 +203,7 @@
             <a href="http://www.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <img src="assets/img/icons/SMA.png" style="height: 100px; width: 100px;">
+                <img src="<?= base_url()?>assets/img/logo1.png" width="50%">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Senior High School</h3>

@@ -8602,9 +8602,9 @@ h1, h2, h3, h4, h5,
         height: 10px;
         margin: 5px;
         border-radius: 50%;
-        background: #fd5f00; }
+        background: #ff000c; }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
-          background: #fff; }
+          background: #007dfa; }
 
 .bg-light {
   background: #fafafa !important; }
@@ -8644,13 +8644,13 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fd5f00;
-    border: 1px solid #fd5f00;
+    background: #a30309;
+    border: 1px solid #a30309;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 1px solid #fd5f00;
+      border: 1px solid #007dfa;
       background: transparent;
-      color: #fd5f00; }
+      color: #007dfa; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #fd5f00;
       background: transparent;
