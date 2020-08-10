@@ -186,7 +186,7 @@
     <section class="ftco-services ftco-no-pb">
       <div class="container-wrap">
         <div class="row no-gutters">
-          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #007bff;">
             <a href="http://www.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
@@ -199,7 +199,7 @@
             </div>
             </a>      
           </div>
-          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #e62727;">
             <a href="http://www.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
@@ -233,7 +233,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/virtual-class.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Vitual Class</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                   </div>
                 </div>
                 </a>
@@ -244,7 +244,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/Portal.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Portal</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                   </div>
                 </div>
                 </a>
@@ -255,7 +255,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/PPDB.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>PPDB Online</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                   </div>
                 </div>
                 </a>
@@ -266,7 +266,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/library.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Al-Qur'an</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                   </div>
                 </div>
                 </a>
@@ -294,9 +294,8 @@
             <div style="width:100%;text-align:center">
               <div style="display:inline-block;margin:0 auto">
                 <object type="image/svg+xml" data="https://www.al-habib.info/islamic-clock/images/station-clock-allah-muhammad.dyn.svg?di=austria&hh=swiss&bgo=allah&dic=167175&hhc=001d1f&bgoc=adeaf3&bglc=2eab92" width="200" height="200">
-                </object>
-                <p style="opacity:0.3;font-size:0.5em"><a href="https://www.al-habib.info/islamic-clock/">Get this Islamic Clock!</a></p>
-                <img style="visibility:hidden;width:0px;height:0px;" border=0 width=0 height=0 src="https://widgets.al-habib.info/images/blank.gif?_alhacid=iclock001-1596885583"></div></div>
+                </object>              
+              </div></div>
             <center>
               <h3 style="color: #FFFFFF"><?=date('l, d M Y');?></h3>
               <h3 style="color: #FFFFFF"><span id="jam"></span></h3>
