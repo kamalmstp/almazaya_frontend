@@ -18,6 +18,7 @@ class Welcome extends CI_Controller {
 		$this->db->select("*");
 		$this->db->from("posts");
 		$this->db->where("post_status","publish");
+		$this->db->where("post_news","Umum");
 		$this->db->order_by("id", "desc");
 		$this->db->limit(6);
 		$berita = $this->db->get();

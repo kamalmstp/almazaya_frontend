@@ -248,7 +248,7 @@
       <div class="container-wrap">
         <div class="row no-gutters">
           <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #007bff;">
-            <a href="http://www.almazayaislamicschool.sch.id/">
+            <a href="http://junior.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                 <img src="<?= base_url()?>assets/img/icons/SMP.png" width="40%;">
@@ -261,7 +261,7 @@
             </a>      
           </div>
           <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #e62727;">
-            <a href="http://www.almazayaislamicschool.sch.id/">
+            <a href="http://senior.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                 <img src="<?= base_url()?>assets/img/icons/SMA.png" width="40%">
@@ -477,7 +477,7 @@
                   <label for="school_level" class="col-sm-12 col-form-label">Jenjang Pendidikan </label>
                     <div class="col-sm-12">
                         <select name="school_level" class="form-control" required>
-                            <option>-- Pilih Jenjang Pendidikan --</option>
+                            <option value="">-- Pilih Jenjang Pendidikan --</option>
                             <option value="SMA" onclick="showDiv()">SMA</option>
                             <option value="SMP" onclick="hiddenDiv()">SMP</option>
                         </select>
@@ -489,7 +489,7 @@
                   <label for="major" class="col-sm-12 col-form-label">Jurusan SMA </label>
                     <div class="col-sm-12">
                         <select name="major" class="form-control" required>
-                            <option>-- Pilih Jurusan untuk SMA --</option>
+                            <option value="">-- Pilih Jurusan untuk SMA --</option>
                             <option value="Social">Social</option>
                             <option value="Science">Science</option>
                         </select>
@@ -511,7 +511,7 @@
                       <!-- <label class="checkbox-inline" style="padding-left: 0px;"><input type="radio" name="jeniskelamin" required="" value="Laki-laki">&nbsp;Laki-laki</label>
                       <label class="checkbox-inline"><input type="radio" name="jeniskelamin" required="" value="Perempuan">&nbsp;Perempuan</label> -->
                       <select name="gender" class="form-control" required>
-                          <option>-- Pilih Jenis Kelamin --</option>
+                          <option value="">-- Pilih Jenis Kelamin --</option>
                           <option value="Laki-laki">&nbsp;Laki-laki</option>
                           <option value="Perempuan">&nbsp;Perempuan</option>
                       </select>
@@ -663,10 +663,20 @@
                   <label for="father_employment" class="col-sm-12 col-form-label">Pekerjaan Ayah </label>
                   <div class="col-sm-12">
                       <select name="father_employment" class="form-control" required>
-                          <option>-- Pilih Pekerjaan --</option>
-                          <option>Pensiunan</option>
+                          <option value="">-- Pilih Pekerjaan --</option>
+                          <option>Buruh</option>
+                          <option>Karyawan Swasta</option>
+                          <option>Nelayan</option>
                           <option>Pedagang Besar</option>
                           <option>Pedagang Kecil</option>
+                          <option>Pensiunan</option>
+                          <option>Petani</option> 
+                          <option>Peternak</option> 
+                          <option>PNS/TNI/POLISI</option>   
+                          <option>Wiraswasta</option>
+                          <option>Wirausaha</option>
+                          <option>Tidak Bekerja</option>
+                          <option>Lain-Lain</option>   
                       </select>
                   </div>
               </div>
@@ -700,10 +710,20 @@
                   <label for="mother_employment" class="col-sm-12 col-form-label">Pekerjaan Ibu </label>
                   <div class="col-sm-12">
                       <select name="mother_employment" class="form-control" required>
-                          <option>-- Pilih Pekerjaan --</option>
-                          <option>Pensiunan</option>
+                          <option value="">-- Pilih Pekerjaan --</option>
+                          <option>Buruh</option>
+                          <option>Karyawan Swasta</option>
+                          <option>Nelayan</option>
                           <option>Pedagang Besar</option>
                           <option>Pedagang Kecil</option>
+                          <option>Pensiunan</option>
+                          <option>Petani</option> 
+                          <option>Peternak</option> 
+                          <option>PNS/TNI/POLISI</option>   
+                          <option>Wiraswasta</option>
+                          <option>Wirausaha</option>
+                          <option>Tidak Bekerja</option>
+                          <option>Lain-Lain</option>            
                       </select>
                   </div>
               </div>
