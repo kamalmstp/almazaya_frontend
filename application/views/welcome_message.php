@@ -22,6 +22,67 @@
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/icomoon.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css">
+    <style type="text/css">
+      .jam_analog_malasngoding {
+        background: url('assets/img/jam.png') center;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 8px solid #000;
+        border-radius: 50%;
+        padding: 10px;
+        margin:10px auto;
+      }
+
+      .xxx {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      .jarum {
+        position: absolute;
+        width: 50%;
+        background: #232323;
+        top: 50%;
+        transform: rotate(90deg);
+        transform-origin: 100%;
+        transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+      }
+
+      .lingkaran_tengah {
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border: 2px solid #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -7px;
+        margin-top: -7px;
+        border-radius: 50%;
+      }
+
+      .jarum_detik {
+        height: 2px;
+        border-radius: 1px;
+        background: #ff0000;
+      }
+
+      .jarum_menit {
+        height: 2px;
+        border-radius: 2px;
+        background: #fff;
+      }
+
+      .jarum_jam {
+        height: 4px;
+        border-radius: 2px;
+        width: 35%;
+        left: 15%;
+        background: #fff;
+      }
+    </style>
   </head>
   <body>
     
@@ -291,15 +352,18 @@
           </div>
           <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
             <h2 class="mb-4"><center>Schedule Al Mazaya Islamic School</center></h2>
-            <div style="width:100%;text-align:center">
-              <div style="display:inline-block;margin:0 auto">
-                <object type="image/svg+xml" data="https://www.al-habib.info/islamic-clock/images/station-clock-allah-muhammad.dyn.svg?di=austria&hh=swiss&bgo=allah&dic=167175&hhc=001d1f&bgoc=adeaf3&bglc=2eab92" width="200" height="200">
-                </object>              
-              </div></div>
+            <div class="jam_analog_malasngoding">
+              <div class="xxx">
+                <div class="jarum jarum_detik"></div>
+                <div class="jarum jarum_menit"></div>
+                <div class="jarum jarum_jam"></div>
+                <div class="lingkaran_tengah"></div>
+              </div>
+            </div>
             <center>
               <h3 style="color: #FFFFFF"><?=date('l, d M Y');?></h3>
               <h3 style="color: #FFFFFF"><span id="jam"></span></h3>
-              <h4 style="color: #FFFFFF">Jam Ke-</h4>
+              <h4 style="color: #FFFFFF">Activity</h4>
               <h1 style="color: #FFFFFF"><span id="ke"> </span></h1>
             </center>
           </div>
@@ -312,7 +376,6 @@
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
             <h2 class="mb-4"><span>Latest</span> News</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
           </div>
         </div>
         <div class="row">
@@ -681,6 +744,35 @@
           
           document.getElementById("ke").innerHTML = isi;
         }
+  </script>
+
+  <script type="text/javascript">
+    const secondHand = document.querySelector('.jarum_detik');
+    const minuteHand = document.querySelector('.jarum_menit');
+    const jarum_jam = document.querySelector('.jarum_jam');
+
+    function setDate(){
+      const now = new Date();
+
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+      if (secondsDegrees === 90) {
+        secondHand.style.transition = 'none';
+      } else if (secondsDegrees >= 91) {
+        secondHand.style.transition = 'all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1)'
+      }
+
+      const minutes = now.getMinutes();
+      const minutesDegrees = ((minutes / 60) * 360) + 90;
+      minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+      const hours = now.getHours();
+      const hoursDegrees = ((hours / 12) * 360) + 90;
+      jarum_jam.style.transform = `rotate(${hoursDegrees}deg)`;
+    }
+
+    setInterval(setDate, 1000)
   </script>
     
   </body>
