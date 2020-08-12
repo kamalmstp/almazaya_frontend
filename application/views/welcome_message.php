@@ -715,27 +715,27 @@
         if (hh >= 0715 && hh <= 0839) {
             isi = 'Dhuha & Tahfidzh';
           } else if(hh >= 0840 && hh <= 0919) {
-            isi = '1';
+            isi = 'Lesson 1';
           } else if(hh >= 0920 && hh <= 0959){
-            isi = '2';
+            isi = 'Lesson 2';
           } else if(hh >= 1000 && hh <= 1029){
             isi = 'Break 1';
           } else if(hh >= 1030 && hh <= 1109){
-            isi = '3';
+            isi = 'Lesson 3';
           } else if(hh >= 1110 && hh <= 1149){
-            isi = '4';
+            isi = 'Lesson 4';
           } else if(hh >= 1150 && hh <= 1239){
             isi = 'Break 2 & Dzuhur';
           } else if(hh >= 1240 && hh <= 1319){
-            isi = '5';
+            isi = 'Lesson 5';
           } else if(hh >= 1320 && hh <= 1359){
-            isi = '6';
+            isi = 'Lesson 6';
           } else if(hh >= 1400 && hh <= 1419){
             isi = 'Break 3';
           } else if(hh >= 1420 && hh <= 1459){
-            isi = '7';
+            isi = 'Lesson 7';
           } else if(hh >= 1500 && hh <= 1539){
-            isi = '8';
+            isi = 'Lesson 8';
           } else if(hh >= 1540 && hh <= 1559){
             isi = 'Ashar';
           } else {
