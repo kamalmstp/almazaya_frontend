@@ -7,6 +7,8 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
+        $this->load->model("registrants_model");
+        $this->load->library('form_validation');
      
     }
 
@@ -22,5 +24,13 @@ class Welcome extends CI_Controller {
 
 		$data['berita'] = $berita->result_array();
 		$this->load->view('welcome_message', $data);
+	}
+
+	public function registration()
+	{
+		$registrants = $this->registrants_model;
+        $registrants->save();
+        $this->session->set_flashdata('success', 'Success!');
+        redirect('welcome');
 	}
 }

@@ -449,6 +449,7 @@
   <div class="modal fade register" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
+        <form action="<?php echo site_url('welcome/registration') ?>" class="form-horizontal" method="POST"  role="form">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">FORMULIR PENDAFTARAN SISWA BARU ALMAZAYA BANJARMASIN</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -456,121 +457,174 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action=""  class="form-horizontal" method="POST"  role="form">
             <div class="col-lg-12">
                 <div class="form-group row">
-                  <label for="usr" class="col-sm-12 col-form-label">Tahun Ajaran </label>
-                  <div class="col-sm-12">
-                    <input type="text" required="" name="awal" class="form-control justnumber" id="awal" placeholder="">
-                  </div>
+                  <label for="school_level" class="col-sm-12 col-form-label">Tahun Ajaran </label>
+                  <!-- <div class="row"> -->
+                    <div class="col-sm-2">
+                      <input type="number" required="" name="first_school_year" class="form-control justnumber" id="first_school_year" placeholder="" value="<?=date("Y")?>">
+                    </div>
+                    <div class="col-sm-1" style="font-size: 24px; text-align: center; width: 39px;">/</div>
+                    <div class="col-sm-2">
+                      <input type="number" required="" name="last_school_year" class="form-control justnumber" id="last_school_year" placeholder="" value="<?=date("Y")+1?>">
+                    </div>
+                  <!-- </div> -->
+                  
                 </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="usr" class="col-sm-12 col-form-label">Jenjang Pendidikan </label>
+                  <label for="school_level" class="col-sm-12 col-form-label">Jenjang Pendidikan </label>
                     <div class="col-sm-12">
-                        <select name="jenjang" class="form-control" required>
+                        <select name="school_level" class="form-control" required>
                             <option>-- Pilih Jenjang Pendidikan --</option>
-                            <option value="SMA">SMA</option>
-                            <option value="SMP">SMP</option>
+                            <option value="SMA" onclick="showDiv()">SMA</option>
+                            <option value="SMP" onclick="hiddenDiv()">SMP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12" id="hidden-div" style="display: none">
+              <div class="form-group row">
+                  <label for="major" class="col-sm-12 col-form-label">Jurusan SMA </label>
+                    <div class="col-sm-12">
+                        <select name="major" class="form-control" required>
+                            <option>-- Pilih Jurusan untuk SMA --</option>
+                            <option value="Social">Social</option>
+                            <option value="Science">Science</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="usr" class="col-sm-12 col-form-label">Nama </label>
+                  <label for="full_name" class="col-sm-12 col-form-label">Nama Lengkap </label>
                   <div class="col-sm-12">
-                      <input type="text" required="" name="nama" class="form-control" id="nama">
+                      <input type="text" required="" name="full_name" class="form-control" id="full_name">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="usr" class="col-sm-12 col-form-label">Tempat Lahir </label>
+                  <label for="gender" class="col-sm-12 col-form-label">Jenis Kelamin </label>
                   <div class="col-sm-12">
-                    <input type="text" class="form-control" required=""  name="tempatlahir" id="tempatlahir">
+                      <!-- <label class="checkbox-inline" style="padding-left: 0px;"><input type="radio" name="jeniskelamin" required="" value="Laki-laki">&nbsp;Laki-laki</label>
+                      <label class="checkbox-inline"><input type="radio" name="jeniskelamin" required="" value="Perempuan">&nbsp;Perempuan</label> -->
+                      <select name="gender" class="form-control" required>
+                          <option>-- Pilih Jenis Kelamin --</option>
+                          <option value="Laki-laki">&nbsp;Laki-laki</option>
+                          <option value="Perempuan">&nbsp;Perempuan</option>
+                      </select>
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="usr" class="col-sm-12 col-form-label">Tanggal Lahir </label>
+                  <label for="nisn" class="col-sm-12 col-form-label">NISN </label>
                   <div class="col-sm-12">
-                    <input type="date" class="form-control"  required=""  name="tanggallahir" id="tanggallahir" style="padding-left: 30px;">
+                      <input type="number" required="" name="nisn" class="form-control" id="nisn" placeholder="Nomor Induk Siswa Nasional">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="alamat" class="col-sm-12 col-form-label">Alamat </label>
+                  <label for="nkk" class="col-sm-12 col-form-label">No. KK </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control" required="" name="alamat" id="alamat">
+                      <input type="number" required="" name="nkk" class="form-control" id="nkk" placeholder="Nomor Kartu Keluarga">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="kelurahan" class="col-sm-12 col-form-label">Kelurahan </label>
+                  <label for="nik" class="col-sm-12 col-form-label">NIK </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control"  required="" name="kelurahan" id="kelurahan">
+                      <input type="number" required="" name="nik" class="form-control" id="nik" placeholder="Nomor Induk Kependudukan">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="kecamatan" class="col-sm-12 col-form-label">Kecamatan </label>
+                  <label for="akta_number" class="col-sm-12 col-form-label">No. Akta Kelahiran </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control" required="" name="kecamatan" id="kecamatan">
+                      <input type="number" required="" name="akta_number" class="form-control" id="akta_number" placeholder="Nomor Akta Kelahiran">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="kota" class="col-sm-12 col-form-label">Kota </label>
+                  <label for="birth_place" class="col-sm-12 col-form-label">Tempat Lahir </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control" required="" name="kota" id="kota">
+                    <input type="text" class="form-control" required=""  name="birth_place" id="birth_place">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="jeniskelamin" class="col-sm-12 col-form-label">Jenis Kelamin </label>
+                  <label for="birth_date" class="col-sm-12 col-form-label">Tanggal Lahir </label>
                   <div class="col-sm-12">
-                      <label class="checkbox-inline" style="padding-left: 0px;"><input type="radio" name="jeniskelamin" required="" value="Laki-laki">&nbsp;Laki-laki</label>
-                      <label class="checkbox-inline"><input type="radio" name="jeniskelamin" required="" value="Perempuan">&nbsp;Perempuan</label>
+                    <input type="date" class="form-control"  required=""  name="birth_date" id="birth_date" style="padding-left: 30px;">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="asalsekolah" class="col-sm-12 col-form-label">Asal Sekolah </label>
+                  <label for="address" class="col-sm-12 col-form-label">Alamat </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control" required="" name="asalsekolah" id="asalsekolah">
+                      <textarea rows="3" type="text" class="form-control" required="" name="address" id="address"></textarea>
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="tahunkelulusan" class="col-sm-12 col-form-label">Tahun Kelulusan</label>
+                  <label for="village" class="col-sm-12 col-form-label">Kelurahan / Desa </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control justnumber" required="" name="tahunkelulusan" id="asalsekolah">
+                      <input type="text" class="form-control"  required="" name="village" id="village">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="telp" class="col-sm-12 col-form-label">Telp rumah / No. Hp</label>
+                  <label for="sub_district" class="col-sm-12 col-form-label">Kecamatan </label>
                   <div class="col-sm-12">
-                      <input type="text" class="form-control justnumber"  required="" name="telp" id="telp">
+                      <input type="text" class="form-control" required="" name="sub_district" id="sub_district">
                   </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
-                  <label for="telp" class="col-sm-12 col-form-label">&nbsp;</label>
-                  <div class="col-sm-10">
+                  <label for="district" class="col-sm-12 col-form-label">Kabupaten / Kota </label>
+                  <div class="col-sm-12">
+                      <input type="text" class="form-control" required="" name="district" id="district">
                   </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="prev_school" class="col-sm-12 col-form-label">Asal Sekolah </label>
+                  <div class="col-sm-12">
+                      <input type="text" class="form-control" required="" name="prev_school" id="prev_school">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="graduation_year" class="col-sm-12 col-form-label">Tahun Kelulusan</label>
+                  <div class="col-sm-12">
+                      <input type="number" class="form-control justnumber" required="" name="graduation_year" id="graduation_year">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="phone" class="col-sm-12 col-form-label">Nomor Telepon / Hp</label>
+                  <div class="col-sm-12">
+                      <input type="text" class="form-control justnumber"  required="" name="phone" id="phone">
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-12">
+              <div class="form-group row">
+                  <p><hr></p>
               </div>
             </div>
             <div class="col-lg-12">
@@ -579,40 +633,122 @@
                   <div class="col-sm-10">
                   </div>
               </div>
+            </div> -->
+              <div class="col-sm-12">
+                  <div class="form-group row">
+                      <label for="father_name" class="col-sm-12 col-form-label">Nama Ayah</label>
+                      <div class="col-sm-12">
+                          <input type="text" class="form-control" required="" name="father_name" id="father_name">
+                      </div>
+                  </div>
+              </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="father_nik" class="col-sm-12 col-form-label">NIK Ayah </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="father_nik" class="form-control" id="father_nik" placeholder="Nomor Induk Kependudukan Ayah">
+                  </div>
+              </div>
             </div>
               <div class="col-sm-12">
                   <div class="form-group row">
-                      <label for="nama_bapak" class="col-sm-12 col-form-label">Bapak</label>
+                      <label for="father_phone" class="col-sm-12 col-form-label">Nomor Telepon / HP Ayah</label>
                       <div class="col-sm-12">
-                          <input type="text" class="form-control" required="" name="nama_bapak" id="nama_bapak">
+                          <input type="text" class="form-control" required="" name="father_phone" id="father_phone">
                       </div>
                   </div>
               </div>
+              <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="father_employment" class="col-sm-12 col-form-label">Pekerjaan Ayah </label>
+                  <div class="col-sm-12">
+                      <select name="father_employment" class="form-control" required>
+                          <option>-- Pilih Pekerjaan --</option>
+                          <option>Pensiunan</option>
+                          <option>Pedagang Besar</option>
+                          <option>Pedagang Kecil</option>
+                      </select>
+                  </div>
+              </div>
+            </div>
               <div class="col-sm-12">
                   <div class="form-group row">
-                      <label for="pekerjaan_bapak" class="col-sm-12 col-form-label">Pekerjaan</label>
+                      <label for="mother_name" class="col-sm-12 col-form-label">Nama Ibu</label>
                       <div class="col-sm-12">
-                          <input type="text" class="form-control" required="" name="pekerjaan_bapak" id="pekerjaan_bapak">
+                          <input type="text" class="form-control" required="" name="mother_name" id="mother_name">
                       </div>
                   </div>
               </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="mother_nik" class="col-sm-12 col-form-label">NIK Ibu </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="mother_nik" class="form-control" id="mother_nik" placeholder="Nomor Induk Kependudukan Ibu">
+                  </div>
+              </div>
+            </div>
               <div class="col-sm-12">
                   <div class="form-group row">
-                      <label for="nama_ibu" class="col-sm-12 col-form-label">Ibu</label>
+                      <label for="mother_phone" class="col-sm-12 col-form-label">Nomor Telepon / HP Ibu</label>
                       <div class="col-sm-12">
-                          <input type="text" class="form-control" required="" name="nama_ibu" id="nama_ibu">
+                          <input type="text" class="form-control" required="" name="mother_phone" id="mother_phone">
                       </div>
                   </div>
               </div>
-              <div class="col-sm-12">
-                  <div class="form-group row">
-                      <label for="pekerjaan_ibu" class="col-sm-12 col-form-label">Pekerjaan</label>
-                      <div class="col-sm-12">
-                          <input type="text" class="form-control" required="" name="pekerjaan_ibu" id="pekerjaan_ibu">
-                      </div>
+              <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="mother_employment" class="col-sm-12 col-form-label">Pekerjaan Ibu </label>
+                  <div class="col-sm-12">
+                      <select name="mother_employment" class="form-control" required>
+                          <option>-- Pilih Pekerjaan --</option>
+                          <option>Pensiunan</option>
+                          <option>Pedagang Besar</option>
+                          <option>Pedagang Kecil</option>
+                      </select>
                   </div>
               </div>
-            <div class="col-lg-12" style="margin-top:60px;">
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="height" class="col-sm-12 col-form-label">Tinggi Badan (cm) </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="height" class="form-control" id="height">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="weight" class="col-sm-12 col-form-label">Berat Badan (kg) </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="weight" class="form-control" id="weight">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="head_cir" class="col-sm-12 col-form-label">Lingkar Kepala (cm) </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="head_cir" class="form-control" id="head_cir">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="mileage" class="col-sm-12 col-form-label">Jarak Tempat Tinggal ke Sekolah (km) </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="mileage" class="form-control" id="mileage">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="sibling_number" class="col-sm-12 col-form-label">Jumlah Saudara Kandung </label>
+                  <div class="col-sm-12">
+                      <input type="number" required="" name="sibling_number" class="form-control" id="sibling_number">
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-12" style="margin-top:60px;">
                 Dengan ini mendaftarkan diri sebagai calon siswa/i SMA AL MAZAYA ISLAMIC SCHOOL BANJARMASIN dan telah menyetujui persyaratan dan peraturan yang berlaku di sekolah ini.
             </div>
             <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
@@ -620,13 +756,13 @@
                    Tertanda,<br />
                   <input type="text" class="form-control" required="" name="tertanda" id="tertanda">
               </div>
-            </div>
-          </form>
+            </div> -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
+        </form>
       </div>
     </div>
   </div>
@@ -773,6 +909,16 @@
     }
 
     setInterval(setDate, 1000)
+  </script>
+
+  <script type="text/javascript">
+        function showDiv(){
+           document.getElementById('hidden-div').style.display = "block";
+        }
+
+        function hiddenDiv(){
+           document.getElementById('hidden-div').style.display = "none";
+        }
   </script>
     
   </body>
