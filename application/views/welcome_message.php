@@ -247,28 +247,28 @@
     <section class="ftco-services ftco-no-pb">
       <div class="container-wrap">
         <div class="row no-gutters">
-          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #007bff;">
+          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #05084f;">
             <a href="http://junior.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <img src="<?= base_url()?>assets/img/icons/SMP.png" width="40%;">
+                <img src="<?= base_url()?>assets/img/icons/SMP2.png" width="40%;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Junior high school</h3>
-                <p>Based on the main cores that Al Mazaya established for, it tries to develop the skills of the students on Islamic (tahfidz), English (daily conversation), and Technology (learning using tablet) sides. SMP Al Mazaya has those three points and keep developing them as the demands of the globalization. SMP Al Mazaya also has Super Camps, some affiliations with others (University, Organization, and Company) to increase the students’ life skills. Overseas Program also one of the medium for the students to show their ability in their independence and confidence. They have to struggle in people’s country and try to show their identity and ability while studying at the same time.</p>
+                <p>Based on the main cores that Al Mazaya established for, it tries to develop the skills of the students on Islamic (tahfidz), English (daily conversation), and Technology (learning using tablet) sides. SMP Al Mazaya has those three points and keep developing them as the demands of the globalization.</p>
               </div>
             </div>
             </a>      
           </div>
-          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #e62727;">
+          <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #800000;">
             <a href="http://senior.almazayaislamicschool.sch.id/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <img src="<?= base_url()?>assets/img/icons/SMA.png" width="40%">
+                <img src="<?= base_url()?>assets/img/icons/SMA2.png" width="40%">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Senior High School</h3>
-                <p>Based on the main cores that Al Mazaya established for, it tries to develop the skills of the students on Islamic (tahfidz), English (daily conversation), and Technology (learning using laptop) sides. SMA Al Mazaya also deepen the English skills of the students by taking them to English Village (Pare). Students can finish their study faster in two years depends on their ability in absorbing the materials and their effort to get good scores for every semester. The additional program for the students who will face the final exam and try to continue their educations to higher level (University), there will be “University Drilling” as the effort of school to bridge the dream of students.</p>
+                <p>Based on the main cores that Al Mazaya established for, it tries to develop the skills of the students on Islamic (tahfidz), English (daily conversation), and Technology (learning using laptop) sides. SMA Al Mazaya also deepen the English skills of the students by taking them to English Village (Pare).</p>
               </div>
             </div>
             </a>    
@@ -286,7 +286,7 @@
           </div>
           <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
             <h2 class="mb-4">What We Offer</h2>
-            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+            <!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p> -->
             <div class="row mt-5">
               <div class="col-lg-6">
                 <a href="http://virtualclass.almazayaislamicschool.sch.id/">
@@ -294,7 +294,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/virtual-class.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Vitual Class</h3>
-                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">virtual class is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.</p>
                   </div>
                 </div>
                 </a>
@@ -305,7 +305,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/Portal.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Portal</h3>
-                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">Portal that was built to provide convenience to users in online school academic administration activities</p>
                   </div>
                 </div>
                 </a>
@@ -316,18 +316,18 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/PPDB.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>PPDB Online</h3>
-                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">A Service System designed to facilitate the automation of the implementation of New Student Admissions (PPDB), from the registration process, selection to real-time announcement of selection results via the Internet.</p>
                   </div>
                 </div>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a href="#">
+                <a href="http://senior.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/library.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Al-Qur'an</h3>
-                    <p style="color: #121010;">Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p style="color: #121010;">The main holy book in Islam which is divided into several chapters, each of which is divided into several verses. Various Al-Qur'an is available starting from Al-Qur'an with Tajweed, Al-Qur'an Translation.</p>
                   </div>
                 </div>
                 </a>
