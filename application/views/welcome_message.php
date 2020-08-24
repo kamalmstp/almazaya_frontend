@@ -254,7 +254,7 @@
                 <img src="<?= base_url()?>assets/img/icons/SMP2.png" width="40%;">
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Junior high school</h3>
+                <h3 class="heading">Junior High School</h3>
                 <p>Based on the main cores that Al Mazaya established for, it tries to develop the skills of the students on Islamic (tahfidz), English (daily conversation), and Technology (learning using tablet) sides. SMP Al Mazaya has those three points and keep developing them as the demands of the globalization.</p>
               </div>
             </div>
