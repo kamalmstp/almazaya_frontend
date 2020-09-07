@@ -248,7 +248,7 @@
       <div class="container-wrap">
         <div class="row no-gutters">
           <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #05084f;">
-            <a href="http://junior.almazayaislamicschool.sch.id/">
+            <a href="http://localhost/almazaya_web/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                 <img src="<?= base_url()?>assets/img/icons/SMP2.png" width="40%;">
@@ -261,7 +261,7 @@
             </a>      
           </div>
           <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #800000;">
-            <a href="http://senior.almazayaislamicschool.sch.id/">
+            <a href="http://localhost/almazaya_web1/">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                 <img src="<?= base_url()?>assets/img/icons/SMA2.png" width="40%">
@@ -328,6 +328,17 @@
                   <div class="text pl-3">
                     <h3>Al-Qur'an</h3>
                     <p style="color: #121010;">The main holy book in Islam which is divided into several chapters, each of which is divided into several verses. Various Al-Qur'an is available starting from Al-Qur'an with Tajweed, Al-Qur'an Translation.</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a href="http://qurantematik.almazayaislamicschool.sch.id/">
+                <div class="services-2 d-flex">
+                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/quran.png" style="height: 100px; width: 100px;"></div>
+                  <div class="text pl-3">
+                    <h3>Al-Qur'an Tematik</h3>
+                    <p style="color: #121010;">Thematic interpretation is a method of interpretation introduced by tafsir scholars to provide answers to people's needs for the guidance of the Qur'an.</p>
                   </div>
                 </div>
                 </a>
@@ -470,7 +481,7 @@
                     </div>
                   <!-- </div> -->
                   
-                </div>
+                </div> 
             </div>
             <div class="col-lg-12">
               <div class="form-group row">
@@ -789,7 +800,7 @@
 
   <!-- Modal Read -->
   <?php foreach ($berita as $brt) {    
-    $user = $this->db->get_where('users', array('id' => $row['post_author']))->row();
+    $user = $this->db->get_where('users', array('id' => $brt['post_author']))->row();
             ?>
   <div class="modal fade read<?=$brt['id']?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
