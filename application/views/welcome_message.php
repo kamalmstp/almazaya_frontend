@@ -491,7 +491,6 @@
                       <input type="number" required="" name="last_school_year" class="form-control justnumber" id="last_school_year" placeholder="" value="<?=date("Y")+1?>">
                     </div>
                   <!-- </div> -->
-                  
                 </div>
             </div>
             <div class="col-lg-12">
