@@ -83,6 +83,62 @@
         background: #fff;
       }
     </style>
+    <style type="text/css">
+      .btn {
+        cursor: pointer;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        border-radius: 40px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important; }
+        .btn:hover, .btn:active, .btn:focus {
+          outline: none; }
+          .btn.btn-primary1 {
+          background: #c0c0c0;
+          border: 1px solid #c0c0c0;
+          color: #05084f; }
+          .btn.btn-primary1:hover {
+            border: 1px solid #c0c0c0;
+            background: transparent;
+            color: #c0c0c0; }
+          .btn.btn-primary1.btn-outline-primary1 {
+            border: 1px solid #c0c0c0;
+            background: transparent;
+            color: #c0c0c0; }
+          .btn.btn-primary1.btn-outline-primary1:hover {
+            border: 1px solid transparent;
+            background: #c0c0c0;
+            color: #05084f; }
+    </style>
+    <style type="text/css">
+      .btn {
+        cursor: pointer;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        border-radius: 40px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important; }
+        .btn:hover, .btn:active, .btn:focus {
+          outline: none; }
+          .btn.btn-primary2 {
+          background: #c0c0c0;
+          border: 1px solid #c0c0c0;
+          color: #800000; }
+          .btn.btn-primary2:hover {
+            border: 1px solid #c0c0c0;
+            background: transparent;
+            color: #c0c0c0; }
+          .btn.btn-primary2.btn-outline-primary2 {
+            border: 1px solid #c0c0c0;
+            background: transparent;
+            color: #c0c0c0; }
+          .btn.btn-primary2.btn-outline-primary2:hover {
+            border: 1px solid transparent;
+            background: #c0c0c0;
+            color: #800000; }
+    </style>
   </head>
   <body>   
 
@@ -264,7 +320,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Junior High School</h3>
-                <button type="button" class="btn btn-primary" data-target="http://junior.almazayaislamicschool.sch.id/">Click Here For Your Information <span class="ion-ios-arrow-round-forward"></span></button>
+                <button type="button" class="btn btn-primary1" data-target="http://junior.almazayaislamicschool.sch.id/">Click Here For Your Information <span class="ion-ios-arrow-round-forward"></span></button>
               </div>
             </div>
             </a>      
@@ -277,7 +333,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Senior High School</h3>
-                <button type="button" class="btn btn-primary" data-target="http://senior.almazayaislamicschool.sch.id/">Click Here For Your Information <span class="ion-ios-arrow-round-forward"></span></button>
+                <button type="button" class="btn btn-primary2" data-target="http://senior.almazayaislamicschool.sch.id/">Click Here For Your Information <span class="ion-ios-arrow-round-forward"></span></button>
               </div>
             </div>
             </a>    
