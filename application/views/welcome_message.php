@@ -356,7 +356,7 @@
               <div class="col-lg-6">
                 <a href="http://virtualclass.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
-                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/virtual-class.png" style="height: 100px; width: 100px;"></div>
+                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/virtual-class2.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Virtual Class</h3>
                     <p style="color: #121010;">virtual class is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.</p>
@@ -367,7 +367,7 @@
               <div class="col-lg-6">
                 <a href="http://portal.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
-                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/Portal.png" style="height: 100px; width: 100px;"></div>
+                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/Portal2.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Portal</h3>
                     <p style="color: #121010;">Portal that was built to provide convenience to users in online school academic administration activities</p>
@@ -389,7 +389,7 @@
               <div class="col-lg-6">
                 <a href="http://senior.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
-                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/library.png" style="height: 100px; width: 100px;"></div>
+                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/quran2.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Al-Qur'an</h3>
                     <p style="color: #121010;">The main holy book in Islam which is divided into several chapters, each of which is divided into several verses. Various Al-Qur'an is available starting from Al-Qur'an with Tajweed, Al-Qur'an Translation.</p>
@@ -400,7 +400,7 @@
               <div class="col-lg-6">
                 <a href="http://qurantematik.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
-                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/quran.png" style="height: 100px; width: 100px;"></div>
+                  <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/tematik.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
                     <h3>Al-Qur'an Tematik</h3>
                     <p style="color: #121010;">Thematic interpretation is a method of interpretation introduced by tafsir scholars to provide answers to people's needs for the guidance of the Qur'an.
