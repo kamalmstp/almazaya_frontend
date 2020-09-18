@@ -462,7 +462,7 @@
             ?>
            <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url('<?=base_url('media_library/posts/medium/'.$row["post_image"])?>');" alt="<?=$row["post_title"]?>">
+              <a href="" data-toggle="modal" data-target=".read<?=$row['id']?>" class="block-20 d-flex align-items-end" style="background-image: url('http://junior.almazayaislamicschool.sch.id/media_library/posts/medium/<?=$row["post_image"]?>');" alt="<?=$row["post_title"]?>">
                 <div class="meta-date text-center p-2">
                   <span class="day"><?=date('d', strtotime($row["created_at"]))?></span>
                   <span class="mos"><?=date('F', strtotime($row["created_at"]))?></span>
@@ -470,7 +470,7 @@
                 </div>
               </a>
               <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#"><?=$row["post_title"]?></a></h3>
+                <h3 class="heading"><a href="" data-toggle="modal" data-target=".read<?=$row['id']?>"><?=$row["post_title"]?></a></h3>
                 <p><?=substr(strip_tags($row["post_content"]), 0, 165)?></p>
                 <div class="d-flex align-items-center mt-4">
                   <p class="mb-0">
@@ -880,7 +880,7 @@
         <div class="modal-body">
           <!-- <a href="#" class="block-20 d-flex align-items-end" style="background-image: url('<?=base_url('media_library/posts/medium/'.$brt["post_image"])?>');" alt="<?=$brt["post_title"]?>"></a> -->
           <div>
-            <img src="<?=base_url('media_library/posts/medium/'.$brt["post_image"])?>" width="100%" alt="">
+            <img src="http://junior.almazayaislamicschool.sch.id/media_library/posts/medium/<?=$brt["post_image"]?>" width="100%" alt="">
           </div>
           <div class="card-body">
             <h4 class="card-title"><?=$brt["post_title"]?></h4>
