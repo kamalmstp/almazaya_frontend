@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Registrants_model extends CI_Model
+class Registrants_model_junior extends CI_Model
 {
-    private $_table = "registrants";
+    private $_table = "registrants_junior";
 
     public $id;
     public $first_school_year;

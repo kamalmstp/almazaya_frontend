@@ -7,7 +7,8 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
-        $this->load->model("registrants_model");
+        $this->load->model("registrants_model_junior");
+        $this->load->model("registrants_model_senior");
         $this->load->library('form_validation');
      
     }
@@ -29,8 +30,14 @@ class Welcome extends CI_Controller {
 
 	public function registration()
 	{
-		$registrants = $this->registrants_model;
-        $registrants->save();
+        $school_level = $this->input->post("school_level");
+		if ($school_level == "SMA") {
+			$registrants = $this->registrants_model_senior;
+        	$registrants->save();
+		}elseif ($school_level == "SMP") {
+			$registrants = $this->registrants_model_junior;
+        	$registrants->save();
+		}
         $this->session->set_flashdata('success', 'Your data is successfully entered');
         redirect('welcome');
 	}
