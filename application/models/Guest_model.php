@@ -7,6 +7,7 @@ class Guest_model extends CI_Model
     public $full_name;
     public $address;
     public $phone;
+    public $created_at;
 
     public function rules()
     {
@@ -27,10 +28,12 @@ class Guest_model extends CI_Model
 
     public function save()
     {
+        $now = date('Y-m-d H:i:s');
         $post = $this->input->post();
         $this->full_name = $post["full_name"];
         $this->address = $post["address"];
         $this->phone = $post["phone"];
+        $this->created_at = $now;
         return $this->db->insert($this->_table, $this);
     }
 }
