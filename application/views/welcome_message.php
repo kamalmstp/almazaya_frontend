@@ -309,6 +309,27 @@
       </div>
     </section>
 
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-color: #ffff;">
+      <div class="container">
+        <h2 class="mb-4"><center>REGISTRATION INFORMATION FOR NEW STUDENTS ALMAZAYA ISLAMIC SCHOOL</center></h2>
+        <div class="row justify-content-center mb-5 pb-2 d-flex">
+          <div class="col-md-6 align-items-stretch d-flex">
+              <div class="video justify-content-center">
+                <h3>For Marketing Information:</h3>
+                <h5>0811 5051 123 <b>(Admin)</b></h5>
+                <h5>0815 6781 9988 <b>(Nurtajali)</b></h5>
+              </div>
+          </div>
+          <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">            
+            <center>
+              <h3>Download Brochure</h3>
+              <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".tamu">CLICK HERE!!!</a></p>
+            </center>
+          </div>
+        </div> 
+      </div>
+    </section>
+
     <section class="ftco-services ftco-no-pb">
       <div class="container-wrap">
         <div class="row no-gutters">
@@ -858,6 +879,54 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Tamu -->
+  <div class="modal fade tamu" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form action="<?php echo site_url('welcome/guest') ?>" class="form-horizontal" method="POST" role="form">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">BUKU TAMU</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="full_name" class="col-sm-12 col-form-label">Nama Lengkap </label>
+                  <div class="col-sm-12">
+                      <input type="text" required="" name="full_name" class="form-control" id="full_name">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="address" class="col-sm-12 col-form-label">Alamat </label>
+                  <div class="col-sm-12">
+                      <textarea rows="3" type="text" class="form-control" required="" name="address" id="address"></textarea>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group row">
+                  <label for="phone" class="col-sm-12 col-form-label">Nomor Telepon / Hp</label>
+                  <div class="col-sm-12">
+                      <input type="text" class="form-control justnumber"  required="" name="phone" id="phone">
+                  </div>
+              </div>
+            </div>            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".download">Save changes</button>
+          
         </div>
         </form>
       </div>

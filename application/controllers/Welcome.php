@@ -7,6 +7,7 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
+		$this->load->model("guest_model");
         $this->load->model("registrants_model_junior");
         $this->load->model("registrants_model_senior");
         $this->load->library('form_validation');
@@ -39,6 +40,14 @@ class Welcome extends CI_Controller {
         	$registrants->save();
 		}
         $this->session->set_flashdata('success', 'Your data is successfully entered');
+        redirect('welcome');
+	}
+
+	public function guest()
+	{
+		$guest = $this->guest_model;
+        $guest->save();
+        $this->session->set_flashdata('success', 'DOWNLOAD BROCHURE <a href="assets/Download.pdf" target="blank">CLICK HERE!!!</a>');
         redirect('welcome');
 	}
 }
