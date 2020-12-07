@@ -309,9 +309,9 @@
       </div>
     </section>
 
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-color: #ffff;">
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-color: #fff;">
       <div class="container">
-        <h2 class="mb-4"><center>REGISTRATION INFORMATION FOR NEW STUDENTS ALMAZAYA ISLAMIC SCHOOL</center></h2>
+        <h2 class="mb-4"><center>REGISTRATION INFORMATION</center></h2>
         <div class="row justify-content-center mb-5 pb-2 d-flex">
           <div class="col-md-6 align-items-stretch d-flex">
               <div class="video justify-content-center">
