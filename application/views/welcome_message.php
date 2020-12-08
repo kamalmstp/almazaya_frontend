@@ -311,18 +311,18 @@
 
 <section class="ftco-section ftco-counter img" id="section-counter" style="background-color: #fff;">
       <div class="container">
-        <h2 class="mb-4"><center>REGISTRATION INFORMATION</center></h2>
+        <h2 class="mb-4" style="color: #fff"><center>REGISTRATION INFORMATION</center></h2>
         <div class="row justify-content-center mb-5 pb-2 d-flex">
           <div class="col-md-6 align-items-stretch d-flex">
               <div class="video justify-content-center">
-                <h3>For Marketing Information:</h3>
-                <h5>0811 5051 123 <b>(Admin)</b></h5>
-                <h5>0815 6781 9988 <b>(Nurtajali)</b></h5>
+                <h3 style="color: #fff">For Marketing Information:</h3>
+                <h5 style="color: #fff">0811 5051 123 <b>(Admin)</b></h5>
+                <h5 style="color: #fff">0815 6781 9988 <b>(Nurtajali)</b></h5>
               </div>
           </div>
           <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">            
             <center>
-              <h3>Download Brochure</h3>
+              <h3 style="color: #fff">Download Brochure</h3>
               <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".tamu">CLICK HERE!!!</a></p>
             </center>
           </div>
