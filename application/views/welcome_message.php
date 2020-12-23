@@ -159,7 +159,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -172,7 +172,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -185,7 +185,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -198,7 +198,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -211,7 +211,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -224,7 +224,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -237,7 +237,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -250,7 +250,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -263,7 +263,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -276,7 +276,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -289,7 +289,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -302,7 +302,7 @@
           <div class="col-md-6 ftco-animate">
             <h1 class="mb-4">Al Mazaya Islamic School</h1>
             <p>do you want to join us ?</p>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".register">Register Now</a></p>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3" data-toggle="modal" data-target=".pilih">Register Now</a></p>
           </div>
         </div>
         </div>
@@ -543,6 +543,98 @@
         </div>
       </div>
     </footer>
+  
+  <!-- Modal Pilih -->
+  <div class="modal fade pilih" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PILIH JENJANG</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="ftco-services ftco-no-pb">
+            <div class="container-wrap">
+              <div class="row no-gutters">
+                <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #05084f;">
+                  <a href="" data-toggle="modal" data-target=".jalur">
+                  <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                      <img src="<?= base_url()?>assets/img/icons/SMP2.png" width="40%;">
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                      <h3 class="heading">Junior High School (SMP)</h3></div>
+                  </div>
+                  </a>      
+                </div>
+                <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #800000;">
+                  <a href="" data-toggle="modal" data-target=".jalur">
+                  <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                      <img src="<?= base_url()?>assets/img/icons/SMA2.png" width="40%">
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                      <h3 class="heading">Senior High School (SMA)</h3>
+                     </div>
+                  </div>
+                  </a>    
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal jalur -->
+  <div class="modal fade jalur" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PILIH JALUR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="ftco-services ftco-no-pb">
+            <div class="container-wrap">
+              <div class="row no-gutters">
+                <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background: linear-gradient(45deg, #05084f 20%, #800000 80%);">
+                  <a href="<?php echo site_url('admin')?>">
+                  <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                      <img src="<?= base_url()?>assets/images/reguler.png" width="40%;">
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                      <h3 class="heading">Reguler</h3></div>
+                  </div>
+                  </a>      
+                </div>
+                <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background: linear-gradient(45deg, #05084f 20%, #800000 80%);">
+                  <a href="<?php echo site_url('admin')?>">
+                  <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                      <img src="<?= base_url()?>assets/images/prestasi.png" width="40%">
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                      <h3 class="heading">Prestasi</h3>
+                     </div>
+                  </div>
+                  </a>    
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>            
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Registrasi -->
   <div class="modal fade register" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
