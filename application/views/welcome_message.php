@@ -559,7 +559,7 @@
             <div class="container-wrap">
               <div class="row no-gutters">
                 <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #05084f;">
-                  <a href="<?php echo site_url('admin')?>">
+                  <a href="<?php echo site_url('admin/indexsmp')?>">
                   <div class="media block-6 d-block text-center">
                     <div class="icon d-flex justify-content-center align-items-center">
                       <img src="<?= base_url()?>assets/img/icons/SMP2.png" width="40%;">
@@ -570,7 +570,7 @@
                   </a>      
                 </div>
                 <div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #800000;">
-                  <a href="<?php echo site_url('admin')?>">
+                  <a href="<?php echo site_url('admin/indexsma')?>">
                   <div class="media block-6 d-block text-center">
                     <div class="icon d-flex justify-content-center align-items-center">
                       <img src="<?= base_url()?>assets/img/icons/SMA2.png" width="40%">
