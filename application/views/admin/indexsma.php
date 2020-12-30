@@ -87,6 +87,13 @@
                         <span class="bs-stepper-label">Biodata Ibu</span>
                       </button>
                     </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#info-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="info-part" id="info-part-trigger">
+                        <span class="bs-stepper-circle">6</span>
+                        <span class="bs-stepper-label">Selesai</span>
+                      </button>
+                    </div>
                   </div>
                   <div class="bs-stepper-content">
                     <!-- your steps content here -->
@@ -225,7 +232,7 @@
                       <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
                       <button class="btn btn-primary" onclick="stepper.next()">Next</button>
                     </div>
-                    <div id="default-part" class="content" role="tabpanel" aria-labelledby="default-part-trigger">
+                    <div id="info-part" class="content" role="tabpanel" aria-labelledby="info-part-trigger">
                       <div class="form-group">
                         <label for="exampleInputFile">File input</label>
                         <div class="input-group">
@@ -239,7 +246,7 @@
                         </div>
                       </div>
                       <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <a href="<?php echo site_url('admin/login')?>"><button type="submit" class="btn btn-primary">Submit</button></a>
                     </div>
                   </div>
                 </div>
