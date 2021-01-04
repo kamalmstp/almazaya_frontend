@@ -25,7 +25,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in</p>
 
-      <form action="<?php echo site_url('admin')?>" method="post">
+      <form action="<?php echo site_url('Siswa')?>" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Username">
           <div class="input-group-append">
