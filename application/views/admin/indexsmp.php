@@ -96,7 +96,7 @@
                       <button class="btn btn-primary" onclick="stepper.next()">Next</button>
                     </div>
                     <div id="diri-part" class="content" role="tabpanel" aria-labelledby="diri-part-trigger">
-                        <input type="hidden" name="major" value="SMP">
+                        <input type="hidden" name="major" value="SMA">
                         <div class="form-group">
                             <label for="full_name">Nama Lengkap</label>
                             <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Masukkan Nama Lengkap">
