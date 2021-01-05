@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="<?php echo base_url()?>assets/images/logo.png">
-  <title>PENDAFTARAN SISWA BARU ALMAZAYA BANJARMASIN</title>
+  <title>AdminLTE 3 | Top Navigation</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -46,7 +49,6 @@
       <div class="row">
           <div class="col-md-12">
             <div class="card card-default">
-            <form action="<?php echo site_url('welcome/registration') ?>" class="form-horizontal" method="POST" role="form">
               <div class="card-header">
                 <h1 class="card-title">FORMULIR PENDAFTARAN SISWA BARU ALMAZAYA BANJARMASIN</h1>
               </div>
@@ -96,71 +98,70 @@
                       <button class="btn btn-primary" onclick="stepper.next()">Next</button>
                     </div>
                     <div id="diri-part" class="content" role="tabpanel" aria-labelledby="diri-part-trigger">
-                        <input type="hidden" name="major" value="SMA">
                         <div class="form-group">
-                            <label for="full_name">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Masukkan Nama Lengkap">
+                            <label for="exampleInputEmail1">Nama Lengkap</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nama Lengkap">
                         </div>
                         <div class="form-group">
-                            <label for="gender">Jenis Kelamin</label>
-                            <select name="gender" class="form-control select2" style="width: 100%;">
+                            <label>Jenis Kelamin</label>
+                            <select class="form-control select2" style="width: 100%;">
                                 <option selected="selected">-- Pilih Jenis Kelamin --</option>
                                 <option>Laki-Laki</option>
                                 <option>Perempuan</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="birth_place">Tempat Lahir</label>
-                            <input type="text" class="form-control" name="birth_place" id="birth_place" placeholder="Masukkan Tempat Lahir">
+                            <label for="exampleInputEmail1">Tempat Lahir</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Tempat Lahir">
                         </div>
                         <div class="form-group">
-                        <label for="birth_date">Tanggal Lahir</label>
+                        <label>Tanggal Lahir</label>
                             <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                                <input type="text" name="birth_date" id="birth_date" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                                <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
                                 <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="address">Alamat</label>
-                            <input type="text" class="form-control" name="address" id="address" placeholder="Masukkan Alamat">
+                            <label for="exampleInputEmail1">Alamat</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Alamat">
                         </div>
                         <div class="form-group">
-                            <label for="village">Kelurahan / Desa</label>
-                            <input type="text" class="form-control" name="village" id="village" placeholder="Masukkan Kelurahan / Desa">
+                            <label for="exampleInputEmail1">Kelurahan / Desa</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Kelurahan / Desa">
                         </div>
                         <div class="form-group">
-                            <label for="sub_district">Kecamatan</label>
-                            <input type="text" class="form-control" name="sub_district" id="sub_district" placeholder="Masukkan Kecamatan">
+                            <label for="exampleInputEmail1">Kecamatan</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Kecamatan">
                         </div>
                         <div class="form-group">
-                            <label for="district">Kabupaten / Kota</label>
-                            <input type="text" class="form-control" name="district" id="district" placeholder="Masukkan Kabupaten / Kota">
+                            <label for="exampleInputEmail1">Kabupaten / Kota</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Kabupaten / Kota">
                         </div>
                         <div class="form-group">
-                            <label for="prev_school">Asal Sekolah</label>
-                            <input type="text" class="form-control" name="prev_school" id="prev_school" placeholder="Masukkan Asal Sekolah">
+                            <label for="exampleInputEmail1">Asal Sekolah</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Asal Sekolah">
                         </div>
                         <div class="form-group">
-                            <label for="graduation_year">Tahun Kelulusan</label>
-                            <input type="text" class="form-control" name="graduation_year" id="graduation_year" placeholder="Masukkan Tahun Kelulusan">
+                            <label for="exampleInputEmail1">Tahun Kelulusan</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Tahun Kelulusan">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Nomor Telepon / Hp</label>
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Masukkan Nomor Telepon / Hp">
+                            <label for="exampleInputEmail1">Nomor Telepon / Hp</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nomor Telepon / Hp">
                         </div>
                       <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
                       <button class="btn btn-primary" onclick="stepper.next()">Next</button>
                     </div>
                     <div id="ayah-part" class="content" role="tabpanel" aria-labelledby="ayah-part-trigger">
                         <div class="form-group">
-                            <label for="father_name">Nama Ayah</label>
-                            <input type="text" class="form-control" name="father_name" id="father_name" placeholder="Masukkan Nama Ayah">
+                            <label for="exampleInputEmail1">Nama Ayah</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nama Ayah">
                         </div>
                         <div class="form-group">
-                            <label for="father_employment">Pekerjaan Ayah</label>
-                            <select name="father_employment" class="form-control select2" style="width: 100%;">
+                            <label>Pekerjaan Ayah</label>
+                            <select class="form-control select2" style="width: 100%;">
                                 <option selected="selected">-- Pilih Pekerjaan --</option>
                                 <option>Buruh</option>
                                 <option>Karyawan Swasta</option>
@@ -182,12 +183,12 @@
                     </div>
                     <div id="ibu-part" class="content" role="tabpanel" aria-labelledby="ibu-part-trigger">
                         <div class="form-group">
-                            <label for="mother_name">Nama Ibu</label>
-                            <input type="text" class="form-control" name="mother_name" id="mother_name" placeholder="Masukkan Nama Ibu">
+                            <label for="exampleInputEmail1">Nama Ibu</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nama Ibu">
                         </div>
                         <div class="form-group">
-                            <label for="mother_employment">Pekerjaan Ibu</label>
-                            <select name="mother_employment" class="form-control select2" style="width: 100%;">
+                            <label>Pekerjaan Ibu</label>
+                            <select class="form-control select2" style="width: 100%;">
                                 <option selected="selected">-- Pilih Pekerjaan --</option>
                                 <option>Buruh</option>
                                 <option>Karyawan Swasta</option>
@@ -226,7 +227,10 @@
                   </div>
                 </div>
               </div>
-            </form>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                Visit <a href="https://github.com/Johann-S/bs-stepper/#how-to-use-it">bs-stepper documentation</a> for more examples and information about the plugin.
+              </div>
             </div>
             <!-- /.card -->
           </div>
@@ -246,8 +250,12 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
     <!-- Default to the left -->
-    <a href="https://www.almazayaislamicschool.sch.id"><strong>Kembali Halaman Almazaya Islamic School.</strong></a>
+    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->

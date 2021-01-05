@@ -8,15 +8,15 @@ class Admin extends CI_Controller {
 		parent::__construct();     
     }
 
-	public function indexsmp()
+	public function index()
 	{
-		$this->load->view('admin/indexsmp');
-  }
+		$this->load->view('admin/index');
+    }
 
-  public function indexsma()
-	{
-		$this->load->view('admin/indexsma');
-  }
-
+    public function dashboard()
+    {
+        $data['content'] = $this->load->view('admin/layout/dashboard');
+        $this->load->view('admin/index', $data);
+    }
 }
 ?>
