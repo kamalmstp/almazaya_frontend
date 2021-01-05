@@ -7,11 +7,6 @@ class Admin extends CI_Controller {
 	{
 		parent::__construct();     
     }
-  
-  public function index()
-  {
-    $this->load->view('admin/index');
-  }
 
 	public function indexsmp()
 	{
@@ -23,9 +18,5 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/indexsma');
   }
 
-  public function login()
-  {
-    $this->load->view('admin/login');
-  }
 }
 ?>
