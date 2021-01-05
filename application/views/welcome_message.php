@@ -560,6 +560,7 @@
                 <div class="form-group row">
                   <label for="school_level" class="col-sm-12 col-form-label">Tahun Ajaran </label>
                   <!-- <div class="row"> -->
+                  <?php if(date('m') > 6): ?>
                     <div class="col-sm-2">
                       <input type="number" required="" name="first_school_year" class="form-control justnumber" id="first_school_year" placeholder="" value="<?=date("Y")?>">
                     </div>
@@ -567,6 +568,15 @@
                     <div class="col-sm-2">
                       <input type="number" required="" name="last_school_year" class="form-control justnumber" id="last_school_year" placeholder="" value="<?=date("Y")+1?>">
                     </div>
+                  <?php elseif(date('m') <= 6): ?>
+                    <div class="col-sm-2">
+                      <input type="number" required="" name="first_school_year" class="form-control justnumber" id="first_school_year" placeholder="" value="<?=date("Y")-1?>">
+                    </div>
+                    <div class="col-sm-1" style="font-size: 24px; text-align: center; width: 39px;">/</div>
+                    <div class="col-sm-2">
+                      <input type="number" required="" name="last_school_year" class="form-control justnumber" id="last_school_year" placeholder="" value="<?=date("Y")?>">
+                    </div>
+                  <?php endif ?>
                   <!-- </div> -->
                 </div>
             </div>
