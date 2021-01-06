@@ -31,7 +31,16 @@ class Welcome extends CI_Controller {
 
 	public function registration()
 	{
+		$id_max = $this->db->select("max(id) as max_id")->from("psb_users")->get()->row();
         $school_level = $this->input->post("school_level");
+	    $post = $this->input->post();
+
+	    $user['username'] = $post["last_school_year"].'00'.$id_max->max_id+1;
+	    $password = md5($post["last_school_year"].'00'.$id_max->max_id+1);
+	    $user['password'] = md5($password);
+	    $user['level'] = "Calon Siswa";
+	    $this->db->insert('psb_users', $user);
+
 		if ($school_level == "SMA") {
 			$registrants = $this->registrants_model_senior;
         	$registrants->save();
@@ -39,7 +48,11 @@ class Welcome extends CI_Controller {
 			$registrants = $this->registrants_model_junior;
         	$registrants->save();
 		}
-        $this->session->set_flashdata('success', 'Your data is successfully entered');
+        $this->session->set_flashdata('success', 'Your data is successfully entered. 
+        	<br><br>Silahkan masuk ke <a href="http://localhost/almazaya_psb" target="blank">Sistem Penerimaan Siswa Baru</a> untuk melengkapi biodata dan persyaratan pendaftaran dengan username dan password berikut.
+        	<br>Username: '.$user["username"].'
+        	<br>Password: '.$password.'
+        	<br><br>Jangan lupa simpanlah username dan password ini!!!');
         redirect('welcome');
 	}
 

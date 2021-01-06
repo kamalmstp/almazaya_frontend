@@ -5,6 +5,7 @@ class Registrants_model_senior extends CI_Model
     private $_table = "registrants_senior";
 
     public $id;
+    public $user_id;
     public $first_school_year;
     public $last_school_year;
     public $school_level;
@@ -97,6 +98,8 @@ class Registrants_model_senior extends CI_Model
     public function save()
     {
         $post = $this->input->post();
+
+        $this->user_id = $this->db->insert_id();
         $this->first_school_year = $post["first_school_year"];
         $this->last_school_year = $post["last_school_year"];
         $this->school_level = $post["school_level"];
@@ -130,6 +133,7 @@ class Registrants_model_senior extends CI_Model
         // $this->mileage = $post["mileage"];
         // $this->traveling_time = $post["traveling_time"];
         // $this->sibling_number = $post["sibling_number"];
+        
         return $this->db->insert($this->_table, $this);
     }
 
