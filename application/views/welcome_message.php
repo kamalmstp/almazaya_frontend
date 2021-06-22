@@ -408,7 +408,7 @@
                 </a>
               </div> -->
               <div class="col-lg-6">
-                <a href="http://senior.almazayaislamicschool.sch.id/">
+                <a href="http://quran.almazayaislamicschool.sch.id/">
                 <div class="services-2 d-flex">
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="assets/img/icons/quran2.png" style="height: 100px; width: 100px;"></div>
                   <div class="text pl-3">
@@ -885,6 +885,22 @@
                   <input type="text" class="form-control" required="" name="tertanda" id="tertanda">
               </div>
             </div> -->
+            <div class="col-sm-12">
+              <div class="form-group row">
+                <label for="mother_name" class="col-sm-12 col-form-label">Username</label>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" required="" name="username" id="username">
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group row">
+                <label for="mother_name" class="col-sm-12 col-form-label">Password</label>
+                  <div class="col-sm-12">
+                    <input type="password" class="form-control" required="" name="password" id="password">
+                  </div>
+              </div>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

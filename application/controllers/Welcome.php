@@ -31,16 +31,53 @@ class Welcome extends CI_Controller {
 
 	public function registration()
 	{
-		$id_max = $this->db->select("max(id) as max_id")->from("psb_users")->get()->row();
-        $school_level = $this->input->post("school_level");
-	    $post = $this->input->post();
+		$now = date('Y-m-d H:i:s');
+        $username = $this->input->post('username');
+        $password = md5($this->input->post('password'));
+        $first_school_year = $this->input->post('first_school_year');
+        $last_school_year = $this->input->post('last_school_year');
+        $school_level = $this->input->post('school_level');
+        $full_name = strtoupper($this->input->post('full_name'));
+        $gender = strtoupper($this->input->post('gender'));
+        $birth_place = strtoupper($this->input->post('birth_place'));
+        $birth_date = $this->input->post('birth_date');
+        $address = strtoupper($this->input->post('address'));
+        $village = strtoupper($this->input->post('village'));
+        $sub_district = strtoupper($this->input->post('sub_district'));
+        $district = strtoupper($this->input->post('district'));
+        $prev_school = strtoupper($this->input->post('prev_school'));
+        $graduation_year = $this->input->post('graduation_year');
+        $phone = $this->input->post('phone');
+        $father_name = strtoupper($this->input->post('father_name'));
+        $father_employment = strtoupper($this->input->post('father_employment'));
+        $mother_name = strtoupper($this->input->post('mother_name'));
+        $mother_employment = strtoupper($this->input->post('mother_employment'));
 
-	    $user['username'] = $post["last_school_year"].'00'.$id_max->max_id+1;
-	    $password = md5($post["last_school_year"].'00'.$id_max->max_id+1);
-	    $user['password'] = md5($password);
-	    $user['level'] = "Calon Siswa";
-	    $this->db->insert('psb_users', $user);
+		$data = array(
+			'username' => $username,
+			'password' => $password,
+			'first_school_year' => $first_school_year,
+			'last_school_year' => $last_school_year,
+			'school_level' => $school_level,
+			'full_name' => $full_name,
+			'gender' => $gender,
+			'birth_place' => $birth_place,
+			'birth_date' => $birth_date,
+			'address' => $address,
+			'village' => $village,
+			'sub_district' => $sub_district,
+			'district' => $district,
+			'prev_school' => $prev_school,
+			'graduation_year' => $graduation_year,
+			'phone' => $phone,
+			'father_name' => $father_name,
+			'father_employment' => $father_employment,
+			'mother_name' => $mother_name,
+			'mother_employment' => $mother_employment,
+			'created_at' => $now
+		);
 
+		$this->db->insert('student', $data);
 		if ($school_level == "SMA") {
 			$registrants = $this->registrants_model_senior;
         	$registrants->save();
@@ -49,10 +86,7 @@ class Welcome extends CI_Controller {
         	$registrants->save();
 		}
         $this->session->set_flashdata('success', 'Your data is successfully entered. 
-        	<br><br>Silahkan masuk ke <a href="http://localhost/almazaya_psb" target="blank">Sistem Penerimaan Siswa Baru</a> untuk melengkapi biodata dan persyaratan pendaftaran dengan username dan password berikut.
-        	<br>Username: '.$user["username"].'
-        	<br>Password: '.$password.'
-        	<br><br>Jangan lupa simpanlah username dan password ini!!!');
+        	<br><br>Silahkan masuk ke <a href="http://localhost/almazaya" target="blank">Sistem Penerimaan Siswa Baru</a> untuk melengkapi biodata dan persyaratan pendaftaran dengan username dan password yang telah dibuat.');
         redirect('welcome');
 	}
 
